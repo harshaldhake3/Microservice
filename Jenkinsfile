@@ -6,7 +6,7 @@ pipeline {
             steps {
                 withKubeConfig(
                     credentialsId: 'kubernetes-cp', 
-                    serverUrl: 'https://192.168.1.11:6443', 
+                    serverUrl: 'https://192.168.1.22:6443', 
                     namespace: 'webapps', 
                     contextName: '', // Specify the context name if available
                     clusterName: 'kubernetes', 
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 withKubeConfig(
                     credentialsId: 'kubernetes-cp', 
-                    serverUrl: 'https://192.168.1.11:6443', 
+                    serverUrl: 'https://192.168.1.22:6443', 
                     namespace: 'webapps', 
                     contextName: '', // Specify the context name if available
                     clusterName: 'kubernetes', 
