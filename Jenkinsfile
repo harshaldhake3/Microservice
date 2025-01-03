@@ -12,7 +12,7 @@ pipeline {
                     clusterName: 'kubernetes', 
                     restrictKubeConfigAccess: false
                 ) {
-                    sh 'kubectl apply -f deploymentservice.yml --validate=false'
+                    sh 'kubectl apply -f deployment-service.yml --validate=false'
                 }
             }
         }
